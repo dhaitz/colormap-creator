@@ -8,7 +8,7 @@ plt.style.use("seaborn-darkgrid")
 (col1, col2) = st.beta_columns(2)
 
 n_colors = col1.number_input("Number of colors", value=2)
-n_segments = col2.number_input("Number of colormap segments", value=10)
+n_segments = col2.number_input("Number of colormap segments", value=10, min_value=n_colors)
 
 color_columns = st.beta_columns(n_colors)
 colors = [col.color_picker(f"Color {i}") for i, col in enumerate(color_columns)]
