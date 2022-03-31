@@ -44,6 +44,7 @@ st.write(fig)
 st.markdown(f"""
 Code:
 
+    from matplotlib.colors import LinearSegmentedColormap
     cmap = LinearSegmentedColormap.from_list('my_colormap', {colors}, N={n_segments})
 """)
 
