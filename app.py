@@ -45,7 +45,10 @@ st.markdown(f"""
 Code:
 
     from matplotlib.colors import LinearSegmentedColormap
+    
     cmap = LinearSegmentedColormap.from_list('my_colormap', {colors}, N={n_segments})
 """)
 
 st.markdown("Code for example figures from Matplotlib docs: [1](https://matplotlib.org/stable/gallery/statistics/hexbin_demo.html#sphx-glr-gallery-statistics-hexbin-demo-py), [2](https://matplotlib.org/stable/tutorials/colors/colormap-manipulation.html)")
+
+st.markdown("[Code for this app](https://github.com/dhaitz/colormap-creator)")
