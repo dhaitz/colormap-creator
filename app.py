@@ -5,12 +5,12 @@ from matplotlib.colors import LinearSegmentedColormap
 
 plt.style.use("seaborn-darkgrid")
 
-(col1, col2) = st.beta_columns(2)
+(col1, col2) = st.columns(2)
 
 n_colors = col1.number_input("Number of colors", value=2)
 n_segments = col2.number_input("Number of colormap segments", value=max([10, n_colors]), min_value=n_colors)
 
-color_columns = st.beta_columns(n_colors)
+color_columns = st.columns(n_colors)
 colors = [col.color_picker(f"Color {i}") for i, col in enumerate(color_columns)]
 
 cmap = LinearSegmentedColormap.from_list('my_colormap', colors, N=n_segments)
