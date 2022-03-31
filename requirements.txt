@@ -1,2 +1,2 @@
 matplotlib
-streamlit<=0.73.0
+streamlit==1.8.0
